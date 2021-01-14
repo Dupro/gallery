@@ -25,11 +25,21 @@
 
                         // $user->update();
 
-                        $user = User::find_user_by_id(4);
+                        // $user = User::find_user_by_id(4);
 
-                        $user->delete();
+                        // $user->delete();
 
+                            // $user = User::find_user_by_id(2);
+                            // $user->username = "dule";
+                            // $user->save();
 
+                            $user = new User();
+
+                            $user->username = "Elon";
+                            $user->password = "123";
+                            $user->save();
+
+                            echo phpinfo();
                         ?>
 
 
