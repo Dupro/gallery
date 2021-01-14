@@ -134,7 +134,7 @@ public function create() {
 	}
 
 
-} // Create method
+} // End of Create method
 
 public function update(){
 	global $database;
@@ -150,7 +150,7 @@ public function update(){
 
 	return (mysqli_affected_rows($database->connection) == 1) ? true : false;
 
-} // Update method
+} // End of Update method
 
 public function delete(){
 	global $database;
@@ -163,7 +163,7 @@ public function delete(){
 
 	return (mysqli_affected_rows($database->connection) == 1) ? true : false;
 
-} // Delete method
+} // End of Delete method
 
 
 
