@@ -12,20 +12,20 @@
 
                         // $user = new User();
 
-                        // $user->username = "Korpa";
-                        // $user->password = "paket";
-                        // $user->first_name = "Lui";
-                        // $user->last_name = "Vitton";
+                        // $user->username = "dupro28";
+                        // $user->password = "sifra123";
+                        // $user->first_name = "Dusko";
+                        // $user->last_name = "Pro";
                         
                         // $user->create();
                         
-                        // $user = User::find_user_by_id(4);
+                        // $user = User::find_user_by_id(14);
 
-                        // $user->last_name = "WILLIAMS";
+                        // $user->last_name = "Proko";
 
                         // $user->update();
 
-                        // $user = User::find_user_by_id(4);
+                        // $user = User::find_user_by_id(12);
 
                         // $user->delete();
 
@@ -33,13 +33,11 @@
                             // $user->username = "dule";
                             // $user->save();
 
-                            $user = new User();
+                            // $user = new User();
 
-                            $user->username = "Elon";
-                            $user->password = "123";
-                            $user->save();
-
-                            echo phpinfo();
+                            // $user->username = "Elon";
+                            // $user->password = "123";
+                            // $user->save();
                         ?>
 
 
