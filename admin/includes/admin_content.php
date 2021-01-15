@@ -19,17 +19,17 @@
                         
                         // $user->create();
                         
-                        // $user = User::find_user_by_id(14);
+                        // $user = User::find_by_id(14);
 
                         // $user->last_name = "Proko";
 
                         // $user->update();
 
-                        // $user = User::find_user_by_id(12);
+                        // $user = User::find_by_id(12);
 
                         // $user->delete();
 
-                            // $user = User::find_user_by_id(2);
+                            // $user = User::find_by_id(2);
                             // $user->username = "dule";
                             // $user->save();
 
@@ -39,12 +39,40 @@
                             // $user->password = "123";
                             // $user->save();
 
-                        $users = User::find_all();
-                        foreach ($users as $user) {
-                            echo $user->username;
+                        $photos = Photo::find_all();
+                        foreach ($photos as $photo) {
+                            echo $photo->title;
                         }
-                        ?>
 
+
+                        // $photo = new Photo();
+
+                        // $photo->title = "Test title";
+                        // $photo->size = 22;
+                        
+                        // $photo->create();
+                        
+                        // $user = User::find_by_id(14);
+
+                        // $user->last_name = "Proko";
+
+                        // $user->update();
+
+                        // $photo = Photo::find_by_id(3);
+
+                        // $photo->delete();
+
+                            // $user = User::find_by_id(2);
+                            // $user->username = "dule";
+                            // $user->save();
+
+                            // $user = new User();
+
+                            // $user->username = "Ledu";
+                            // $user->password = "123";
+                            // $user->save();
+
+                        ?>
 
 
 
