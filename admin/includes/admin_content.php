@@ -39,10 +39,10 @@
                             // $user->password = "123";
                             // $user->save();
 
-                        $photos = Photo::find_all();
-                        foreach ($photos as $photo) {
-                            echo $photo->title;
-                        }
+                        // $photos = Photo::find_all();
+                        // foreach ($photos as $photo) {
+                        //     echo $photo->title;
+                        // }
 
 
                         // $photo = new Photo();
@@ -71,6 +71,9 @@
                             // $user->username = "Ledu";
                             // $user->password = "123";
                             // $user->save();
+
+                        
+
 
                         ?>
 
