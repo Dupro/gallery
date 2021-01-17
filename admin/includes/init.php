@@ -7,7 +7,7 @@
 defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
 
 // definisemo putanju do naseg sajta
-defined('SITE_ROOT') ? null : define('SITE_ROOT', DS . 'C:' . DS . 'xampp' . DS . 'htdocs' . DS . 'gallery');
+defined('SITE_ROOT') ? null : define('SITE_ROOT', 'C:' . DS . 'xampp' . DS . 'htdocs' . DS . 'gallery');
 
 // definisemo putanju do includes foldera u adminu
 defined("INCLUDES_PATH") ? null : define('INCLUDES_PATH', SITE_ROOT.DS.'admin'.DS.'includes');
