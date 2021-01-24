@@ -12,8 +12,8 @@ class Paginate {
 public function __construct($page=1, $items_per_page=4, $items_total_count=0 ){
 
 		$this->current_page      = (int)$page;
-		$this->items_per_page    = (int)$page;
-		$this->items_total_count = (int)$page;
+		$this->items_per_page    = (int)$items_per_page;
+		$this->items_total_count = (int)$items_total_count;
 
 
 }
@@ -21,21 +21,21 @@ public function __construct($page=1, $items_per_page=4, $items_total_count=0 ){
 
 	public function next(){
 
-		return->current_page + 1;
+		return $this->current_page + 1;
 
 
 }
 
 	public function previous(){
 
-		return->current_page - 1;
+		return $this->current_page - 1;
 
 
 }
 
 	public function page_total(){
 
-		return $this->items_total_count/$this->items_per_page;
+		return ceil($this->items_total_count/$this->items_per_page);
 }
 
 

@@ -81,7 +81,6 @@ $message = "Photo uploaded Successfully.";
                     <div class="col-lg-12">
                         <h1 class="page-header">
                             UPLOAD
-                            <small>Subheading</small>
                         </h1>
 
                         <div class="col-md-6">
