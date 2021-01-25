@@ -57,7 +57,7 @@ $comments = Comment::find_the_comments($_GET['id']);
                         <h1 class="page-header">
                             comments
                         </h1>
-
+                        <?php if($session->message) { echo "<p class='pull-right col-lg-3 alert alert-success'>{$session->message}</p>"; } ?>
                         
                         <div class="col-md-12">
                             

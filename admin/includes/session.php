@@ -4,8 +4,8 @@ class Session {
 
 	private $signed_in = false;
 	public $user_id;
-	public $message;
 	public $count;
+	public $message;
 
 	function __construct (){
 
@@ -96,7 +96,7 @@ private function check_the_login(){
 
 }
 $session = new Session();
-
+$message = $session->message();
 
 
 

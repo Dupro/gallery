@@ -50,7 +50,7 @@ $users = User::find_all();
                         <h1 class="page-header">
                             Users
                         </h1>
-
+                        <?php if($session->message) { echo "<p class='pull-right col-lg-3 alert alert-success'>{$session->message}</p>"; } ?>
                         <a href="add_user.php" class="btn btn-primary">Add User</a>
                         
                         <div class="col-md-12">
