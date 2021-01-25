@@ -52,7 +52,7 @@ $photos = Photo::find_by_query($sql);
          
                 </div>
 
-                <div class="row">
+                <div class="row text-center">
                     
                     <ul class="pagination">
 
