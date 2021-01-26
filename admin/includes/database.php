@@ -6,10 +6,11 @@ class Database {
 
 
 	public $connection;
+	public $db;
 
 	function __construct(){
 
-		$this->open_db_connection();
+		$this->db = $this->open_db_connection();
 	}
 
 	public function open_db_connection(){
@@ -21,11 +22,13 @@ class Database {
 		if($this->connection->connect_errno){
 			die("Database connection Failed". $this->connection->error);
 		}
+
+		return $this->connection;
 	}
 
 	public function query($sql){
 
-		$result = $this->connection->query($sql);
+		$result = $this->db->query($sql);
 
 		$this->confirm_query($result);
 			   // mysqli_query($this->connection, $sql);
@@ -37,20 +40,20 @@ class Database {
 	private function confirm_query($result){
 
 		if(!$result){
-			die("Query Failed" . $this->connection->error);
+			die("Query Failed" . $this->db->error);
 		}
 	}
 
 	public function escape_string($string){
-		$escaped_string = $this->connection->real_escape_string($string);
-		// mysqli_real_escape_string($this->connection, $string);
+		return $this->db->real_escape_string($string);
+		// mysqli_real_escape_string($this->db, $string);
 
 		return $escaped_string;
 	}
 
 	public function the_insert_id() {
 
-		return $this->connection->insert_id;
+		return $this->db->insert_id;
 	}
 
 

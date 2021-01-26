@@ -6,11 +6,16 @@
 // directory separator - pravi kose crte u putanji bilo da je s leva ili s desna (Win/Mac)
 defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
 
-// definisemo putanju do naseg sajta
+// definisemo putanju do naseg sajta u lokalu
 defined('SITE_ROOT') ? null : define('SITE_ROOT', 'C:' . DS . 'xampp' . DS . 'htdocs' . DS . 'gallery');
+
+// $_SERVER['DOCUMENT_ROOT']
+// defined('SITE_ROOT') ? null : define('SITE_ROOT', $_SERVER['DOCUMENT_ROOT'] . DS . 'gallery');
 
 // definisemo putanju do includes foldera u adminu
 defined("INCLUDES_PATH") ? null : define('INCLUDES_PATH', SITE_ROOT.DS.'admin'.DS.'includes');
+
+ob_start();
 
 
 

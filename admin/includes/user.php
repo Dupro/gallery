@@ -124,6 +124,12 @@ public function delete_photo(){
 
 }
 
+public function photos(){
+
+	global $database;
+
+	return Photo::find_by_query("SELECT * FROM photos WHERE user_id= " . $this->id);
+}
 
 // public function delete_user(){
 
