@@ -76,7 +76,7 @@ $comments = Comment::find_all();
                                         
                                         <td><?php echo $comment->body; ?>
                                         <div class="action_links">
-                                            <a href="delete_comment.php?id=<?php echo $comment->id; ?>">Delete</a>
+                                            <a class="delete_link" href="delete_comment.php?id=<?php echo $comment->id; ?>">Delete</a>
                                         </div>
                                         </td>
                                     </tr>

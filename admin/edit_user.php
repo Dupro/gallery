@@ -148,7 +148,7 @@ redirect("users.php");
                         <input type="password" name="password" class="form-control" id="password" value="<?php echo $user->password; ?>">
                         </div>
                         <div class="form-group">
-                          <a id="user-id" class="btn btn-danger pull-left" href="delete_user.php?id=<?php echo $user->id; ?>">Delete</a>
+                          <a id="user-id" class="btn btn-danger pull-left delete_link" href="delete_user.php?id=<?php echo $user->id; ?>">Delete</a>
                         </div>
                         <div class="form-group">
                         <input type="submit" name="update" class="btn btn-primary pull-right" value="Update">
